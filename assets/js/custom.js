@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+  // blog
+
+  $('.blog_sec').mouseover(function(){
+    $('.blog_sec').removeClass('active')
+    $(this).addClass('active')
+  })
+
     //sticky menu
     function toggleSubMenu() {
       if ($(window).width() <= 992) {
