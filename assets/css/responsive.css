@@ -37,6 +37,8 @@
 }
 
 @media (max-width: 992px) {
+    .blog_details_text{padding: 0;}
+    .blog_start .container{max-width: 100%;padding: 0 25px;}
     .pr_box{width: 100%;}
     .con_info_main .contact-one-information{
     padding-top: 40px;
@@ -186,9 +188,19 @@
         .why_service_main .why_service{padding-top: 40px;}
         .count_ser .count_block {padding-bottom: 40px;}
         .testimonial_single .testimonial-area{padding-bottom: 20px !important;}
+        .blog_details{padding-top: 110px !important;}
 }
 
 @media (max-width: 768px) {
+   .blog_details_text .pr-info-inn h2{        line-height: 57px;}
+    .single_blog_hero{padding-top: 110px !important;}
+    .blog_start .d-flex{gap: 0;}
+    .blog_start .d-flex{flex-direction: column;}
+    .blog_sec::before{opacity: 0.4 !important;}
+    .blog_sec{height: auto;}
+    .blog_sec.active{height: auto;width: 100%;}
+    .blog-info, .blog-author{    clip-path: circle(150% at 0 0) !important;}
+    .blog_sec.active{}
     .contact_single .contact_text{padding-top: 30px;}
     .contact_single .theme_heading .main_heading{margin-bottom: 10px;}
 .team_single .team_mates{padding-bottom: 35px !important;}
@@ -471,6 +483,7 @@
 
 
 @media (max-width: 480px) {
+    .related-blogs .blog-info{padding-right: 25px;}
     .tptestimonial__meta h4{font-size: 25px;}
     .contact_text .group_img{max-width: 150px;}
     .service-image{flex-direction: column;}

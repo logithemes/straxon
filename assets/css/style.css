@@ -1989,7 +1989,8 @@ background-clip: text;
     position: relative;
     transition: all 0.8s ease;
 }
-.blog_sec.active::before{position: absolute;content: '';top: 0;left: 0;right: 0;bottom: 0;width: 100%;height: 100%;background: #000;opacity: 0.4;transition: all 0.8s ease;}
+.blog_sec::before{position: absolute;content: '';top: 0;left: 0;right: 0;bottom: 0;width: 100%;height: 100%;background: #000;transition: all 0.8s ease;opacity: 0;}
+.blog_sec.active::before{opacity: 0.4;transition: all 0.8s ease;}
 .blog_img{
     height: 100%;overflow: hidden;    border-radius: 30px;
   
@@ -2042,10 +2043,10 @@ background-clip: text;
 .active .blog-author{clip-path: circle(150% at 0 0);transition: all 0.8s ease;transition-delay: 0.3s;}
 
  /* blog details */
-.blog_details{
+.blog_details_text{
     padding: 0 150px 0 150px;
 }
-.blog_details h2{
+.blog_details_text h2{
     line-height: 73px;
     font-size: 72px;
 }
