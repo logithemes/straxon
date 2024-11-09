@@ -284,7 +284,7 @@ a {
 }
 
 @media only screen and (max-width: 576px) {
-  .main-menu{width: 100%;}
+  /* .main-menu{width: 100%;} */
 }
 
 .menu ul li.sub {

@@ -161,14 +161,14 @@ a{text-decoration: none  !important;}
 .br-radius-20{border-radius: 20px;}
 .br-radius-25{border-radius: 25px;}
 .br-radius-30{border-radius: 30px;}
-
+.bg_gradient{background-image: radial-gradient(circle at 67% 34%, #b460f13b, #b460f100 20%);}
 
 /*---------------------------------
     banner start
 ---------------------------------*/
 
 .hero_sec {
-    padding: 180px 0 100px 0;
+    padding: 180px 0 65px 0;
     text-align: center;
     background-image: radial-gradient(circle at 65% 30%, #b460f14d, #b460f100);
     background-size: cover;
@@ -182,7 +182,7 @@ a{text-decoration: none  !important;}
  .hero_heading{line-height: 120px;font-size: 122px;padding-top: 10px;padding-bottom: 15px;}
 .hero-content p{
     padding-top: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .text-gradiant{
   background-image: linear-gradient(65deg, rgb(240 136 0) 17%, rgb(234 99 234) 45%, rgb(255 30 255));
@@ -402,7 +402,7 @@ a{text-decoration: none  !important;}
   overflow: hidden;
   white-space: nowrap;
 }
-
+.brand_slide{margin-bottom: -18px;}
 .text-slider {
   font-size: 95px;
   line-height: 1;
@@ -1072,6 +1072,13 @@ footer {
   padding-bottom: 50px;
 }
 
+.service .container .row:last-of-type .col-lg-4 .service_box {
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+
+
 .service-image .image-wrapper:last-child{margin-right: 0;}
 .service-banner .theme_heading .main_heading{
     margin-bottom: 10px;
@@ -1205,8 +1212,9 @@ footer {
     padding: 0 15px;
     height: 100%;
     position: relative;
-    display: inline-block;
+    display: inline-block;transition: all 0.3s ease;
 }
+.pr_slide_inn li:hover{transform: translateY(-20px);transition: all 0.3s ease;}
 .pr_box{
     width: 100%;
     height: 100%;
@@ -1215,6 +1223,25 @@ footer {
     height: 56.64vh;
     max-height: 580px;
 }
+
+
+.pr_slide_inn li .pr_text h3:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  background: #ff3294;
+  transform: scalex(0);
+  transform-origin: right;
+}
+.pr_slide_inn li:hover .pr_text h3:before {
+  transform: scalex(1);
+  transform-origin: left;
+}
+
 .pr_box::before{position: absolute;content: '';top: 0;right: 0;bottom: 0;left: 0;background: linear-gradient(0deg, #2b0404, transparent);border-radius: 50px;}
 .pr_box img{
     width: 100%;
@@ -1231,8 +1258,9 @@ footer {
 }
 .pr_text h3{
     font-size: 30px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px;    position: relative;display: inline-block;
 }
+
 /* about */
 
 .comm-head .main_heading{
@@ -1808,7 +1836,9 @@ background-clip: text;
 .accordion .btn {
   color: var(--white);
   font-size: 23px;
-  padding-top: 13px;text-align: left;
+  padding-top: 13px;
+  padding-left: 0;
+  text-align: left;
 }
 .accordion .btn:hover {
   color: #ccc;
@@ -1835,6 +1865,7 @@ background-clip: text;
     font-size: 14px;
     padding-top: 0;
     padding-bottom: 15px;
+    padding-left: 0;
 }
 
 /* contact us paage */
@@ -1921,7 +1952,12 @@ background-clip: text;
   font-size: 30px;
   color: #fff;
 }
-
+.info-section{
+    border-top: 1px solid #999;
+}
+.info-section .border_black{
+    border-right: 1px solid #999;
+}
 .info-section .title {
   font-size: 23px;
   margin-top: 12px;
@@ -2007,7 +2043,7 @@ background-clip: text;
 
  /* blog details */
 .blog_details{
-    padding: 0 250px 0 250px;
+    padding: 0 150px 0 150px;
 }
 .blog_details h2{
     line-height: 73px;
@@ -2124,6 +2160,44 @@ background-clip: text;
     max-width: 290px;
     margin-bottom: 20px;
 }
+
+/* scroll down */
+/* Style for the mouse icon */
+.mouse-icon {
+  width: 25px;
+  height: 36px;
+  border: 1.6px solid #fff;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the scrolling line inside the mouse icon */
+.scroll-line {
+  width: 2px;
+  height: 0;
+  background-color: #fff;
+  animation: scroll 3.5s infinite;
+}
+
+/* Keyframe animation for the scrolling line */
+@keyframes scroll {
+  0% {
+    height: 0;
+
+  }
+  50% {
+    height: 18px;
+
+  }
+  100% {
+    height: 0;
+  
+  }
+}
+
 .{}
 .{}
 .{}
