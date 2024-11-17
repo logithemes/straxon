@@ -714,6 +714,7 @@ a{text-decoration: none  !important;}
   background-color: #1d1d1d;
   transition: transform 0.3s;position: relative;
 }
+
 .team-member-card::before{position: absolute;content: '';bottom: 0;left: 0;right: 0;background: linear-gradient(1deg, #0b0b0bbd, transparent);height: 77%;z-index: 1;}
 .team-member-card:hover img{
   transform: scale(1.1); transition: transform 0.3s;
@@ -1072,10 +1073,7 @@ footer {
   padding-bottom: 50px;
 }
 
-.service .container .row:last-of-type .col-lg-4 .service_box {
-  margin-bottom: 0;
-  opacity: 0;
-}
+
 
 
 
