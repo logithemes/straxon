@@ -170,7 +170,7 @@ a{text-decoration: none  !important;}
 .hero_sec {
     padding: 180px 0 65px 0;
     text-align: center;
-    background-image: radial-gradient(circle at 65% 30%, #b460f14d, #b460f100);
+    background-image: radial-gradient(circle at 65% 30%, #b460f14d, #b460f100 28%);
     background-size: cover;
 }
 
@@ -179,7 +179,7 @@ a{text-decoration: none  !important;}
     text-transform: capitalize;
 }
 
- .hero_heading{line-height: 120px;font-size: 122px;padding-top: 10px;padding-bottom: 15px;}
+ .hero_heading{line-height: 110px;font-size: 118px;padding-top: 10px;padding-bottom: 15px;}
 .hero-content p{
     padding-top: 35px;
     padding-bottom: 20px;

@@ -50,6 +50,7 @@ a {
   right: -13px;
   top: 3px;
   transition: 0.4s;
+  transform: scale(0.8);
 }
 
 .main-menu li {
@@ -69,7 +70,7 @@ a {
 
 .dropdown:hover .fa-caret-down {
   transition: 0.4s;
-  transform: rotate(181deg);
+  transform: rotate(181deg) scale(0.8);
 }
 
 .lets_talk {
@@ -163,13 +164,18 @@ a {
 }
 
 @media only screen and (max-width: 991px) {
+
+  .main-menu .sub-menu{max-width: 100% !important;padding-left: 22px  !important;}
+  .main-menu .sub-menu li{padding: 7px 0px 8px 0px !important;}
+  .main-menu .sub-menu li{border: 0;}
+  .sub-menu ul li a{font-size: 13px !important;}
   .main-menu .sub-menu.act{
     width: 90%;
     transform: translateY(52px) !important;
-    
-
+   
+    background: rgb(16 26 43);
 }
-  .main-menu .fa-caret-down{right: 0;top: 13px;width: 30px;height: 30px;display: flex;align-items: center;justify-content: center;cursor: pointer;z-index: 999;padding: 10px;}
+  .main-menu .fa-caret-down{right: 0;top: 12px;width: 25px;height: 25px;display: flex;align-items: center;justify-content: center;cursor: pointer;z-index: 999;padding: 10px;transform: scale(1);border: 1px solid #999;border-radius: 50px;}
   .main-menu a {
       width: auto !important;
       display: inline-block;
@@ -216,7 +222,7 @@ a {
   .main-menu {
       overflow-y: auto;
       height: 100vh;
-      width: 416px;
+      /* width: 100%; */
       background: rgb(22, 36, 61);
       padding: 57px 33px 35px 34px;
       z-index: 99;
@@ -224,10 +230,11 @@ a {
       right: -500px !important;
       transition: all 0.4s ease;
       position: fixed;
-      margin-top: -40px;
+      /* margin-top: -40px; */
       z-index: 99;
       bottom: 0;
       top: 0;
+      max-width: 400px;
   }
 
   .menu_bar {
@@ -244,10 +251,13 @@ a {
 
   .menu-open .main-menu {
      
-      z-index: 100;
-      margin-top: -40px;
-      right: 0px !important;
-      transition: all 0.4s ease;
+z-index: 100;
+     
+/* margin-top: 0; */
+     
+right: 0px !important;
+     
+transition: all 0.4s ease;
   }
 
   .menu-open .main-menu ul {
@@ -293,8 +303,8 @@ a {
 
 .main-menu .sub-menu {
   position: absolute;
-  background: rgb(39 22 51);
-  padding: 6px 15px 8px;
+  background: rgb(24 19 27);
+  padding: 15px 15px 20px 22px;
   box-shadow: rgba(10, 10, 10, 0.17) 0px 9px 18px -6px;
   left: 0px;
   top: 0px;
@@ -303,10 +313,12 @@ a {
   transition: 0.4s;
   transform: translateY(70px);
   border-radius: 3px;
-  width: 130px;
+  max-width: 132px;
   z-index: 99;
 }
-
+.sub-menu ul li a{
+    font-size: 14px;
+}
 .main-menu .sub-menu ul {
   padding: 0px;
   margin: 0px;
@@ -317,14 +329,14 @@ a {
 .main-menu .sub-menu li {
   float: left;
   width: 100%;
-  padding: 1px 0px;
+  padding: 5px 0px 5px 0px;
 }
 
 .main-menu .sub-menu.act {
   transition: 0.4s;
   opacity: 1;
   visibility: visible;
-  transform: translateY(60px);
+  transform: translateY(38px);
 }
 
 .main-menu .sub-menu ul li:first-child {
