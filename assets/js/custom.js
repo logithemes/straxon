@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+
+  // rotate animations
+    // Select the rotating text element
+    const rotatingText = document.querySelector('.theme-btn .animation_btn');
+    let angle = 0;
+    
+    // Function to rotate the text using JavaScript
+    const rotateText = () => {
+      angle += 1; // Increase the angle (adjust value for speed)
+      rotatingText.style.transform = `rotateZ(${angle}deg)`;
+    };
+    
+    // Call the function every 16ms (approximately 60 frames per second)
+    setInterval(rotateText, 16);
   // blog
 
   $('.blog_sec').mouseover(function(){
@@ -35,6 +49,8 @@ $(document).ready(function () {
     
   
 $(window).on("scroll", function(){
+
+  
 
   
   var _top = $(window).scrollTop();
@@ -165,11 +181,11 @@ $(".hero_sec").mousemove(function(e) {
     "transform": "translateX(" + translateX + "px"});
   
   $(".hero_girl").css({
-    "transform": "translate(" + (-translateX / 14) + "px, " + (-translateY / 14) + "px)"
+    "transform": "translate(" + (-translateX / 25) + "px, " + (-translateY / 25) + "px)"
   });
   
   $(".hero_boy").css({
-    "transform": "translate(" + (translateX / 14) + "px, " + (translateY / 14) + "px)"
+    "transform": "translate(" + (translateX / 25) + "px, " + (translateY / 25) + "px)"
   });
 });
 
@@ -183,6 +199,7 @@ $(".hero_sec").mousemove(function(e) {
 document.getElementById('monthly-btn').addEventListener('click', function() {
   this.classList.add('active');
   document.getElementById('yearly-btn').classList.remove('active');
+  document.querySelector('.price').textContent = 'hii'
 });
 
 document.getElementById('yearly-btn').addEventListener('click', function() {
@@ -215,5 +232,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+$(window).on('mousemove', function(e) {
+  var w = $(window).width();
+  var h = $(window).height();
+  var offsetX = 0.5 - e.pageX / w;
+  var offsetY = 0.5 - e.pageY / h;
+
+  $(".parallax").each(function(i, el) {
+      var offset = parseInt($(el).data('offset'));
+      var translate = "translate3d(" + Math.round(offsetX * offset) + "px," + Math.round(offsetY * offset) + "px, 0px)";
+
+      $(el).css({
+          '-webkit-transform': translate,
+          'transform': translate,
+          'moz-transform': translate
+      });
+  });
+});
 
 
