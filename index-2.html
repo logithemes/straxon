@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/spacing.css">
-
     <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     
   </head>
   <body>
@@ -40,9 +40,12 @@
               </div>
             </li>
             <li class="dropdown">
-              <a href="index.html">home </a> <i class="fa-solid fa-caret-down"></i>
+              <a href="#">home </a> <i class="fa-solid fa-caret-down"></i>
               <div class="sub-menu">
                 <ul>
+                  <li>
+                    <a href="index.html">Home1</a>
+                  </li>
                 <li>
                   <a href="index-2.html">Home2</a>
                 </li>
@@ -50,10 +53,44 @@
                 <!-- <span class="fa fa-times sub-menu-close" aria-hidden="true"></span> -->
               </div>
             </li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="projects.html">projects</a></li>
+            <li><a href="about.html">about</a> 
+           
+            </li>
+            <li class="dropdown"><a href="">Pages</a> <i class="fa-solid fa-caret-down"></i>
+            
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <a href="service.html">Service</a>
+                  </li>
+                <li>
+                  <a href="projects.html">projects</a>
+                </li>
+             
+               
+                <li><a href="team.html">Team</a></li>
+                <li>
+                  <a href="404.html">404</a>
+                </li>
+               
+                </ul>
+                <!-- <span class="fa fa-times sub-menu-close" aria-hidden="true"></span> -->
+              </div></li>
             <li><a href="pricing.html">pricing</a></li>
-            <li><a href="team.html">Team</a></li>
+            <li class="dropdown">
+              <a href="#">Blog</a> <i class="fa-solid fa-caret-down"></i>
+              <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                      <a href="blog-details.html">Blog details</a>
+                    </li>
+                  </ul>
+              </div>
+            </li>
+     
             <li><a href="contact.html">contact</a></li>
           </ul>
          
@@ -81,7 +118,6 @@
   </div>
 </div>
 <!-- Header end -->
-    
     <!-- hero2 statr -->
     <div class="hero-area-two pt_200 float-left w-100">
       <div class="container">
@@ -103,7 +139,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-12 wow fadeIn" data-wow-duration="3">
-            <div class="hero-two-img">
+            <div class="hero-two-img hover_img">
               <img class="br-radius-30 w-100" src="assets/img/hero-2/banner/hero-2.webp" alt="">
             </div>
           </div>
@@ -154,9 +190,9 @@
       <!-- homw two why cshhos us start -->
       <div class="why-ch-us-home-2 float-left w-100 pt_60">
         <div class="container-fluid">
-          <div class="why-2-inner float-left w-100">
-            <ul class="hom-2-slider">
-              <li>
+          <div class="why-2-inner float-left w-100 home-tow-slider">
+            <ul class="hom-2-slider swiper-wrapper">
+              <li class="swiper-slide">
                 <div class="why-2-box d-flex align-items-center justify-content-between">
                   <div class="why-2-img ">
                     <img src="assets/img/hero-2/why-choose-us/why-1.webp" alt="">
@@ -170,7 +206,7 @@
                 </div>
               </li>
 
-              <li>
+              <li class="swiper-slide">
                 <div class="why-2-box d-flex align-items-center justify-content-between">
                   <div class="why-2-img ">
                     <img src="assets/img/hero-2/why-choose-us/why-3.webp" alt="">
@@ -184,7 +220,7 @@
                 </div>
               </li>
 
-              <li>
+              <li class="swiper-slide">
                 <div class="why-2-box d-flex align-items-center justify-content-between">
                   <div class="why-2-img ">
                     <img src="assets/img/hero-2/why-choose-us/why-2.webp" alt="">
@@ -197,7 +233,7 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <div class="why-2-box d-flex align-items-center justify-content-between">
                   <div class="why-2-img ">
                     <img src="assets/img/hero-2/why-choose-us/why-1.webp" alt="">
@@ -211,7 +247,7 @@
                 </div>
               </li>
 
-              <li>
+              <li class="swiper-slide">
                 <div class="why-2-box d-flex align-items-center justify-content-between">
                   <div class="why-2-img ">
                     <img src="assets/img/hero-2/why-choose-us/why-3.webp" alt="">
@@ -225,7 +261,7 @@
                 </div>
               </li>
 
-              <li>
+              <li class="swiper-slide">
                 <div class="why-2-box d-flex align-items-center justify-content-between">
                   <div class="why-2-img ">
                     <img src="assets/img/hero-2/why-choose-us/why-2.webp" alt="">
@@ -239,7 +275,7 @@
                 </div>
               </li>
             
-              <li>
+              <li class="swiper-slide">
                 <div class="why-2-box d-flex align-items-center justify-content-between">
                   <div class="why-2-img ">
                     <img src="assets/img/hero-2/why-choose-us/why-2.webp" alt="">
@@ -274,7 +310,7 @@
           </div>
             <!-- Image Section -->
             <div class="col-lg-6 col-md-12">
-              <div class="experience-image hm-two-img">
+              <div class="experience-image hm-two-img hover_img">
                 <img class="br-radius-25 w-100" src="assets/img//hero-2/service/ser-2.webp" alt="Creative Art">
               </div>
             </div>
@@ -728,7 +764,7 @@
     
    
 <!-- contact us start -->
-<div class="contact_us float-left w-100  pb_100 ">
+<div class="contact_us float-left w-100  pb_100 pt_60">
   <div class="container ">
     <div class="row">
         <!-- Form Section -->
@@ -857,150 +893,18 @@
        
       <!-- script -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-   
+      <script src="assets/js/custom.js"></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
       <script src="assets/js/bootstrap.min.js"></script>
       <script src="assets/js/respond.min.js"></script>
       <script src="assets/js/jquery-3.6.0.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="assets/js/script.js"></script>
       <script src="assets/js/wow.js"></script>
       <script src="assets/mail/mail.js"></script>
    
 
-      <script>
-
-          // awarrd tab
-  // Select all award list items
-const awardItems = document.querySelectorAll('.award-list li');
-
-// Get elements to update
-const awardYearElement = document.getElementById('year');
-const awardDescriptionElement = document.getElementById('award-description');
-
-// Add click event listeners to each award item
-awardItems.forEach(item => {
-  item.addEventListener('click', () => {
-    // Get the data attributes for the year and description
-    const selectedYear = item.getAttribute('data-year');
-    const selectedDescription = item.getAttribute('data-description');
-
-    // Update the year and description in the left panel
-    awardYearElement.textContent = selectedYear;
-    awardDescriptionElement.textContent = selectedDescription;
-
-    // Optional: Add an active class for styling
-    awardItems.forEach(el => el.classList.remove('active'));
-    
-    item.classList.add('active');
-  });
-});
-
-        // animations
-const $marqueeInner = $('.brand-inner');
-const marqueeWidth = $marqueeInner[0].scrollWidth;
-
-// Clone the marquee content to create a seamless loop
-$marqueeInner.append($marqueeInner.html());
-
-let currentX = 0;
-
-function animateMarquee() {
-  currentX -= 2; // Adjust this value to control the speed
-
-  // Reset when it reaches the end of the original content
-  if (Math.abs(currentX) >= marqueeWidth) {
-    currentX = 0;
-  }
-
-  $marqueeInner.css('transform', `translateX(${currentX}px)`);
-  requestAnimationFrame(animateMarquee);
-}
-
-animateMarquee();
-
-$(window).on('scroll', function() {
-    var scrollTop = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    
-    // Project Area dynamic height adjustment
-    var projectAreaTop = $('.project-area').offset().top;
-
-    // Check if the project area is in view
-    if (scrollTop + windowHeight > projectAreaTop) {
-        var heightIncrease = (scrollTop + windowHeight - projectAreaTop) * 0.9; // Adjust multiplier for desired effect
-        $('.line').css('height', heightIncrease + 'px');
-    } else {
-        $('.line').css('height', '0px');
-    }
-
-    // Testimonial section scroll-triggered animation
-    var testimonial_top = $('.testimonial-2').offset().top - 350; // Subtracting 350 from top
-    var testimonial_bottom = $('.testimonial-2').offset().top + $('.testimonial-2').outerHeight(); // No need to add height to top
-    
-    // Check if the testimonial section is in view based on adjusted top and bottom
-    if (scrollTop + windowHeight > testimonial_top && scrollTop < testimonial_bottom) {
-        var testi_heading = $('.testimonial-2 .theme_heading .main_heading');
-        var translateX = "-" + (scrollTop - testimonial_top) - 60 + "px";
-        var translateY = "-" + (scrollTop - testimonial_top) / 2 + "px";
-          // Heading animation
-          testi_heading.css({
-            'transform': 'translateX(' + translateX + ')',
-            'transition': 'transform 0.1s ease-out'
-        });
-        // Testimonial card animation
-        $('.testimonial-2 .testimonial-card').css({
-            'transform': 'translateY(' + translateY + ')',
-            'opacity': '1',
-            'transition': 'transform 0.1s ease-out, opacity 0.1s ease-out'
-        });
-
-      
-    } else {
-        // Reset the transform and opacity when out of view
-        $('.testimonial-2 .testimonial-card').css({
-            'transform': 'translateY(150px)', 
-            'opacity': '0', 
-            'transition': 'transform 0.3s ease-in, opacity 0.3s ease-in'
-        });
-    }
-});
-
-
-
-
-  // home 2 slider
-  $('.hom-2-slider').slick({
-
-     
-centerMode: true,
-centerPadding: '60px',
-slidesToShow: 2,
-responsive: [
-  {
-    breakpoint: 992,
-    settings: {
-      arrows: false,
-      centerMode: true,
-      centerPadding: '40px',
-      slidesToShow: 1
-    }
-  },
-  {
-    breakpoint: 480,
-    settings: {
-      arrows: false,
-      centerMode: true,
-    
-      slidesToShow: 1
-    }
-  }
-]
-});
-
-      </script>
+  
     
   </body>
 </html>

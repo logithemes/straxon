@@ -7,9 +7,9 @@
         padding-right: 0;
     }
     .pr_ban p::before{width: 12%;}
-
+  
     .ab-exp-left{padding-right: 0;}
-
+  
     .award-name{padding-left: 16px;}
     .home-two-service .hm-two-text{padding-left: 0;}
     .hm-two-text h5{width: 70%;}
@@ -29,14 +29,14 @@
         left: -30px;
         top: 20px;
     }
- 
+  
     .hero_boy {
         right: -30px;
         bottom: -10px;
     }
-}
-
-@media (max-width: 992px) {
+  }
+  
+  @media (max-width: 992px) {
     .faq{margin-bottom: 40px;}
     .team_mates_main .team_mates{padding-bottom: 20px !important;}
     .blog_details_text{padding: 0;}
@@ -46,7 +46,7 @@
     padding-top: 40px;
     padding-bottom: 0;
     margin-bottom: -20px;
-}
+  }
     .text_contact .text_slide_main{padding-top: 73px;}
     .team_banner{    padding-top: 119px !important;
         padding-bottom: 100px !important;}
@@ -61,7 +61,7 @@
     .project-area_main .project-area{padding-top: 40px  !important;}
     .testimonial-2 .testimonial-card{        transform: translateY(0) !important;}
     .mt_top{margin-top: 60px;padding-bottom: 0 !important;}
-    .testimonial-2{padding: 80px 0  !important;}
+    .testimonial-2{padding: 80px 0 0 0  !important;height: 100%;}
     .testimonial-2 .theme_heading .main_heading{font-size: 70px;left: 0;transform: translateX(0)  !important;}
     .team-item{margin-bottom: 40px;}
     .team_mates{padding-bottom: 40px !important;}
@@ -76,27 +76,27 @@
     .process-text {
         margin-bottom: 10px;
     }
-
+  
     .experience-image {
         padding-left: 0;
         padding-top: 40px;    margin-bottom: 40px;
     }
-
+  
     .comm_banner{
     padding-top: 100px !important;
     padding-bottom: 0 !important;
-}
-
-.content-text{    font-size: 15px;
+  }
+  
+  .content-text{    font-size: 15px;
     padding-left: 70px;}
-
-.exp .row{align-items: center;}
-
+  
+  .exp .row{align-items: center;}
+  
     .comm-head .main_heading {
         font-size: 91px !important;
         line-height: 93px !important;
     };
-
+  
     .faq {margin-bottom: 70px;}
     .pricing_hero .main_heading {
         font-size: 100px;
@@ -106,32 +106,32 @@
     .hm-two-text h5{width: 100%;text-align: center;}
   
     .why-2-inner{margin-left: 0;}
-
+  
     .hero-area-two .hero_heading{    padding-top: 18px;        margin-bottom: -7px;
         padding-bottom: 0;}
     
     .award-list li{    font-size: 34px;}
     .why-ch-us-home-2{padding: 0 30px;}
-
-.why-2-inner .slick-list{padding: 0 0 0 0 !important;}
-
+  
+  .why-2-inner .slick-list{padding: 0 0 0 0 !important;}
+  
     .hero-area-two{padding-top: 100px  !important;}
     .hero-two-img {
         padding-left: 0;
         margin-top: 40px;
     }
-
+  
     .home-two-service .hm-two-img {
         padding-right: 0;
         margin-bottom: 30px;
         padding-top: 0;
     }
-
+  
     .hero-area-two .hero-two-text{padding: 0;}
-
+  
     .line_ani{display: flex;align-items: center;justify-content: center;}
     .line_ani .line_inn{transform: none !important;left: auto;height: 3px;}
-
+  
     .project-area .mb_40{}
     .contact_text{padding: 0;}
     .contact_text{padding-left: 30px;padding-right: 0;}
@@ -159,21 +159,21 @@
         font-size: 70px;
         line-height: 80px;
     }
- 
+  
     .hero-content p {
         padding-top: 20px;
     }
- 
+  
     .hero_girl, .hero_boy {
         width: 120px;
         position: relative;
         transform: none;
         z-index: -1;
     }
-
+  
     .footer_logo{margin-bottom: 30px;}
     .tptestimonial__meta h4{margin: 0;}
-
+  
     .abt_process_main .about-process-main {
         padding-top: 30px !important;
     }
@@ -192,9 +192,9 @@
         .count_ser .count_block {padding-bottom: 40px;}
         .testimonial_single .testimonial-area{padding-bottom: 20px !important;}
         .blog_details{padding-top: 110px !important;}
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .con_main .contact_us{        padding-top: 30px !important;}
     .pricing_hero .theme_heading{padding-bottom: 15px !important;}
     .hm_two_main .home-two-service{padding-bottom: 30px !important;}
@@ -212,20 +212,20 @@
     .blog_sec.active{}
     .contact_single .contact_text{padding-top: 30px;}
     .contact_single .theme_heading .main_heading{margin-bottom: 10px;}
-.team_single .team_mates{padding-bottom: 35px !important;}
+  .team_single .team_mates{padding-bottom: 35px !important;}
     .testimonial-area .slick-prev, .testimonial-area .slick-next{display: none;}
     .info-section .row{text-align: left !important;}
     .info-section .icon{padding-top: 0;}
-
+  
     .info-section, .info-section .border_black{border: 0;}
     .testimonial-2 .testimonial-card{margin-bottom: 0;}
     .testimonial-2 .theme_heading{padding-bottom: 0 !important;}
     .ser_two .who_we_are{
     padding-top: 30px;
-}
+  }
   .service-main .service-banner {
     padding-bottom: 50px;
-}
+  }
     .why_service_main .why_service{padding-top: 18px !important;}
     .why_service_main .why_service p{margin-bottom: 0;}
     .who_we_are .order-md-2{order: 2;}
@@ -234,7 +234,7 @@
     .contact_us .contact_text{padding-bottom: 10px;}
     .contact-one-information .d-flex{
     margin-bottom: 20px;
-}
+  }
     .contact-one-information .container{max-width: 540px;}
     .contact-one-information .border-right{border: 0  !important;}
    
@@ -247,58 +247,58 @@
     }
     .con-hero-right img{        right: 0;
         bottom: -45px;}
-
+  
     .comm_bann_main .rotate_main{
     display: block !important;
     margin-top: 20px;
-}
-.contact_us_bann .comm_ban{text-align: center;}
-.contact_us_bann br{display: none;}
+  }
+  .contact_us_bann .comm_ban{text-align: center;}
+  .contact_us_bann br{display: none;}
     .pr-info-inn h2 {
         font-size: 50px;
     }
-
+  
     .pr-img img {
         height: 450px;
         object-fit: cover;
     }
-
+  
     .pr-info-box {
         padding-left: 20px;
         padding-right: 20px;
     }
-
+  
     .process-steps{position: relative;}
-
+  
     .exp img {
         width: 100%;margin-bottom: 10px;
     }
-
+  
     .exp-tp-wrap {
      display: none !important;
         margin-bottom: 0 !important;
     }
     .exp::before{display: none;}
     .comm_banner br{display: none;}
-
+  
     .years {
         text-align: center !important;
         width: 100%;
         display: block;
         padding-left: 0;
     }
-
+  
     .years-text {
         padding: 4px 0 5px 0;
     }
-.about-us .theme_heading{padding-bottom: 0 !important;}
-.main .exp{padding-top: 0  !important;}
+  .about-us .theme_heading{padding-bottom: 0 !important;}
+  .main .exp{padding-top: 0  !important;}
     .content-text {
         font-size: 15px;
         padding-left: 0;        text-align: center;
         padding-top: 15px;        font-style: normal;
     }
-
+  
     .process-text {
      padding-right: 0;
     }
@@ -306,21 +306,21 @@
         font-size: 70px;
         line-height: 75px;
     }
-
+  
     .brand_slide .theme_heading{
     padding-bottom: 0 !important;;
     margin-top: 18px;
-}
-
-.br_tow .theme_heading{margin-top: 0;}
+  }
+  
+  .br_tow .theme_heading{margin-top: 0;}
     .ser_icon img{max-width: 70px;}
     .service_box h3{
     /* margin-top: -10px; */
-}
+  }
     .service_box p{
     margin-top: 0;
     margin-bottom: 8px;
-}
+  }
     .contact_us .theme_heading{padding-bottom: 0 !important;}
     .contact_text{padding-left: 0;padding-bottom: 50px;}
     .why_choose_us .theme_heading .main_heading{margin-bottom: 0;}
@@ -336,14 +336,14 @@
     .about_story_text{        padding-left: 0;
         text-align: center;
         padding-top: 11px;}
-
+  
     .hero_girl .girl_img{max-width: 180px;}
     .hero_boy .boy_img{max-width: 120px;z-index: -1;position: relative;}
     .experience-image {
         height: 100%;
       
     }
-
+  
     .process-item {
         flex-direction: column;
         align-items: flex-start;
@@ -358,7 +358,7 @@
         margin: 0;
         font-size: 21px;
       }
-
+  
     .left-panel, .right-panel {
         border: none;
         text-align: center;
@@ -367,7 +367,7 @@
       .award-list {
         padding-top: 20px;
       }
-
+  
     .about-one-experience .ms-auto {
         margin-left: 0;
         text-align: right;
@@ -384,7 +384,7 @@
     .image-wrapper img {
         width: 100%;
     }
-
+  
     .footer-container {
         flex-direction: column;
         text-align: center;
@@ -399,44 +399,44 @@
     .hero_sec {
         padding: 140px 0 30px 0;
     }
- 
+  
     .hero-content {
         padding: 0 10px;
     }
- 
+  
    
- 
+  
     .line_ani .line_inn {
         width: 50px;
         transform: translateX(0);
     }
-
+  
     
     .award_tab {
         padding-left: 0;margin-top: -40px;        padding-bottom: 40px;
     
     }
-
+  
     .left-panel {
         padding: 18px 0 0 0;
         text-align: left !important;
     }
-
+  
     .right-panel {
         padding: 0 0 9px 0;
     }
-
+  
     .award-list li {
         font-size: 30px;
     }
     .line_shape{display: none;}
-
+  
     .home-two-service .theme_heading{padding-bottom: 0  !important;}
    .main .project-area-2{padding-top: 15px !important;padding-bottom: 28px !important;}
    .con_info_main .contact-one-information{padding-top: 30px  !important;}
-}
-
-@media (max-width: 576px) {
+  }
+  
+  @media (max-width: 576px) {
     .ser-one-video span{display: none;}
     .hero-start-img img{height: 350px;object-fit: cover;}
     .team_banner{padding-bottom: 60px !important;}
@@ -448,12 +448,12 @@
     .step-number {
         left: -8px;
         font-size: 17px;
-}
-
+  }
+  
     .award-name .text-muted{
     margin: 10px 0 20px 0;
     padding-right: 0;
-}
+  }
     .award-name {
         flex-direction: column;
         padding: 24px 0 0 0;
@@ -462,7 +462,7 @@
         width: auto;
         height: auto;
     }
-
+  
     .list-unstyled li {
         flex-direction: column;
     }
@@ -481,20 +481,20 @@
     .hero_sec {
         padding: 80px 0 40px 0;
     }
- 
+  
    
- 
+  
     .hero-content p {
         font-size: 14px;
     }
- 
+  
     .line_ani .line_inn {
         width: 40px;
     }
-}
-
-
-@media (max-width: 480px) {
+  }
+  
+  
+  @media (max-width: 480px) {
     .related-blogs .blog-info{padding-right: 25px;}
     .tptestimonial__meta h4{font-size: 25px;}
     .contact_text .group_img{max-width: 150px;}
@@ -502,10 +502,10 @@
     .service-banner .image-wrapper{margin: 0;}
     .service-image .image-wrapper:first-child{
     margin-bottom: 30px;
-}
+  }
     .pr-img img {
         height: 300px;}
-
+  
     .step-number {
         left: -2px;
         font-size: 16px;
@@ -517,7 +517,7 @@
         margin-bottom: 8px !important;
         margin-top: 6px;
     }
-
+  
     .pricing_hero .main_heading {
         line-height: 61px;
         font-size: 52px;
@@ -531,7 +531,7 @@
         padding: 20px 20px 24px 20px;
         font-size: 17px;
     }
-.main .project-area-2 .theme_heading{margin-bottom: 13px;}
+  .main .project-area-2 .theme_heading{margin-bottom: 13px;}
     .porfolio_shapes img{max-width: 250px;}
     .why-2-text {
         text-align: center;
@@ -544,42 +544,43 @@
         margin-bottom: 12px;
         display: inline-block;
     }
-
+  
     .feature-card {
         padding: 25px;}
-
+  
     .project_content h3{    font-size: 24px;}
     .project_content p{    font-size: 13px;
         line-height: 22px;}
     .project_content{padding-right: 71px;padding-top: 30px;}
-
+  
     .project_content i {
         width: 50px;
         height: 50px;    font-size: 14px;}
-
+  
    
     .main_heading, .testimonial-2 .theme_heading .main_heading{
         font-size: clamp(35px, 6.8vw, 67px);
     }
-
+  
     .about_story_text{padding-left: 15px;padding-right: 15px;}
-
+  
     .testimonial-img img {
     
         width: 91px;
     }
-
+  
     .testimonial-text p {
         margin: 19px 0 32px 0;
         display: inline-block;
       
         padding: 0;
     }
-
+  
     .testimonial-img .reduce_size{display: none;}
     .hero_girl{width: 35%;}
     .hero_girl .girl_img{height: auto;max-width: 100%;}
     .hero_boy .boy_img{height: auto;max-width: 100%;}
     .hero_boy{width: 25%;}
     .hero-content .hero_heading{font-size: 52px;line-height: 60px;}
-}
+  }
+  

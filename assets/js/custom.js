@@ -1,6 +1,51 @@
 $(document).ready(function () {
 
+  $(window).on("scroll", function(){
+    var _top = $(window).scrollTop();
+  
+    if (_top > 100) {
+      $(".tp_header").addClass("act");
+    } else {
+      $(".tp_header").removeClass("act");
+    }
+  }); 
+  
+  // pricng
 
+  
+ 
+  const constrain = 100;
+
+  $(".hover_img").on("mousemove", function (event) {
+    const ex1Layer = $(this).find("img"); // Target the <img>
+    if (ex1Layer.length > 0) {
+      const x = event.clientX;
+      const y = event.clientY;
+      applyTransform(ex1Layer, x, y);
+    }
+  });
+  
+  $(".hover_img").on("mouseleave", function () {
+    const ex1Layer = $(this).find("img");
+    if (ex1Layer.length > 0) {
+      ex1Layer.css("transform", "none");
+    }
+  });
+  
+  function calculateTransform(x, y, el) {
+    const box = el[0].getBoundingClientRect(); // Get element's bounding box
+    const calcX = -(y - box.y - box.height / 2) / constrain; // Calculate rotateX
+    const calcY = (x - box.x - box.width / 2) / constrain;  // Calculate rotateY
+    return `perspective(500px) rotateX(${calcX}deg) rotateY(${calcY}deg)`; // Apply perspective along with rotations
+  }
+  
+  function applyTransform(el, x, y) {
+    if (el.length > 0) {
+      el.css("transform", calculateTransform(x, y, el)); // Apply the calculated transform
+    }
+  }
+  
+  
   // rotate animations
     // Select the rotating text element
     const rotatingText = document.querySelector('.theme-btn .animation_btn');
@@ -48,19 +93,6 @@ $(document).ready(function () {
     });
     
   
-$(window).on("scroll", function(){
-
-  
-
-  
-  var _top = $(window).scrollTop();
-
-  if (_top > 100) {
-    $(".tp_header").addClass("act");
-  } else {
-    $(".tp_header").removeClass("act");
-  }
-}); 
 
   $(".image-wrapper").addClass('act')
 
@@ -117,39 +149,6 @@ awardItems.forEach(item => {
     
   
     
-    
-    
-
-    //     // home2
-    // // .why-slider
-    //  $('.pr-slider').slick({
-    //   centerMode: true,
-    //   centerPadding: '60px',
-    //   slidesToShow: 3,
-    //   responsive: [
-    //     {
-    //       breakpoint: 768,
-    //       settings: {
-    //         arrows: false,
-    //         centerMode: true,
-    //         centerPadding: '40px',
-    //         slidesToShow: 3
-    //       }
-    //     },
-    //     {
-    //       breakpoint: 480,
-    //       settings: {
-    //         arrows: false,
-    //         centerMode: true,
-    //         centerPadding: '40px',
-    //         slidesToShow: 1
-    //       }
-    //     }
-    //   ]
-    // });
-    
-  
-    
 
 
   
@@ -195,17 +194,32 @@ $(".hero_sec").mousemove(function(e) {
 
 
 
-// pricing plan
-document.getElementById('monthly-btn').addEventListener('click', function() {
-  this.classList.add('active');
-  document.getElementById('yearly-btn').classList.remove('active');
-  document.querySelector('.price').textContent = 'hii'
+// Handle toggle between monthly and yearly pricing
+document.getElementById('monthly-btn').addEventListener('click', function () {
+  updatePricing('data-month', '/Per Month');
+  toggleActiveClass(this, document.getElementById('yearly-btn'));
 });
 
-document.getElementById('yearly-btn').addEventListener('click', function() {
-  this.classList.add('active');
-  document.getElementById('monthly-btn').classList.remove('active');
+document.getElementById('yearly-btn').addEventListener('click', function () {
+  updatePricing('data-year', '/Per Year');
+  toggleActiveClass(this, document.getElementById('monthly-btn'));
 });
+
+// Function to update all pricing plans dynamically
+function updatePricing(attribute, durationText) {
+  const prices = document.querySelectorAll('.price');
+  prices.forEach((priceElement) => {
+      const newPrice = priceElement.getAttribute(attribute);
+      priceElement.innerHTML = `${newPrice} <span>${durationText}</span>`;
+  });
+}
+
+// Function to toggle active class between buttons
+function toggleActiveClass(activeBtn, inactiveBtn) {
+  activeBtn.classList.add('active');
+  inactiveBtn.classList.remove('active');
+}
+
 
 // why choose mousemove
 

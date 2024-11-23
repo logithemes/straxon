@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   </head>
   <body>
-   <!-- Header start -->
+    <!-- Header start -->
 <div  class="tp_header w-100 position-absolute ">
   <div class="container">
     <div class="row">
@@ -37,9 +38,12 @@
               </div>
             </li>
             <li class="dropdown">
-              <a href="index.html">home </a> <i class="fa-solid fa-caret-down"></i>
+              <a href="#">home </a> <i class="fa-solid fa-caret-down"></i>
               <div class="sub-menu">
                 <ul>
+                  <li>
+                    <a href="index.html">Home1</a>
+                  </li>
                 <li>
                   <a href="index-2.html">Home2</a>
                 </li>
@@ -47,10 +51,44 @@
                 <!-- <span class="fa fa-times sub-menu-close" aria-hidden="true"></span> -->
               </div>
             </li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="projects.html">projects</a></li>
+            <li><a href="about.html">about</a> 
+           
+            </li>
+            <li class="dropdown"><a href="">Pages</a> <i class="fa-solid fa-caret-down"></i>
+            
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <a href="service.html">Service</a>
+                  </li>
+                <li>
+                  <a href="projects.html">projects</a>
+                </li>
+             
+               
+                <li><a href="team.html">Team</a></li>
+                <li>
+                  <a href="404.html">404</a>
+                </li>
+               
+                </ul>
+                <!-- <span class="fa fa-times sub-menu-close" aria-hidden="true"></span> -->
+              </div></li>
             <li><a href="pricing.html">pricing</a></li>
-            <li><a href="team.html">Team</a></li>
+            <li class="dropdown">
+              <a href="#">Blog</a> <i class="fa-solid fa-caret-down"></i>
+              <div class="sub-menu">
+                  <ul>
+                    <li>
+                      <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                      <a href="blog-details.html">Blog details</a>
+                    </li>
+                  </ul>
+              </div>
+            </li>
+     
             <li><a href="contact.html">contact</a></li>
           </ul>
          
@@ -290,7 +328,7 @@
   
         <!-- Image Section -->
         <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-duration="0.4s">
-          <div class="image-section h-100">
+          <div class="image-section h-100 hover_img">
             <img src="assets/img/feature/fea-2.webp" class="img-fluid h-100 object-fit-cover w-100" alt="Digital Solutions">
           </div>
            
@@ -391,65 +429,97 @@
               </div>
             </div>
            
-            <div class="d-tabel text-center testimonial-inner">
-          
-                <ul class="pr_slider">
-                  <li>
-                    <div class="testimonial-box">
-               <div class=" testimonial-img">
-                <img class="reduce_size" src="assets/img/testimonials/testi-1.webp" alt="">
-                <img class="scale_1" src="assets/img/testimonials/testi-2.webp" alt="">
-                <img class="reduce_size" src="assets/img/testimonials/testi-3.webp" alt="">
-               </div>
-               <div class="testimonial-text">
-                <p>" Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis. Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
-                <div class="tptestimonial__meta">
-                  <h4>Jerome Bell</h4>
-                  <span>Product designer </span>
-               </div>
-               </div>
-              </div>
-                  </li>
+            <div class="d-tabel text-center testimonial-inner mySwiper">
+              <!-- Swiper wrapper -->
+              <ul class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <li class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="testimonial-img">
+                      <img class="reduce_size" src="assets/img/testimonials/testi-1.webp" alt="">
+                      <img class="scale_1" src="assets/img/testimonials/testi-2.webp" alt="">
+                      <img class="reduce_size" src="assets/img/testimonials/testi-3.webp" alt="">
+                    </div>
+                    <div class="testimonial-text">
+                      <p>
+                        "Lorem ipsum dolor sit consectetur adipiscing. Mauris scelerisque euismod ante mpor. Curabitur rutrum id
+                        odio sit amet efficitur. Vestibulum tempor mattis mollis. Phasellus eget sapien in nisi sollicitudin commodo ac
+                        quis tortor."
+                      </p>
+                      <div class="tptestimonial__meta">
+                        <h4>Jerome Bell</h4>
+                        <span>Product designer</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Slide 2 -->
+                <li class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="testimonial-img">
+                      <img class="reduce_size" src="assets/img/testimonials/testi-2.webp" alt="">
+                      <img class="scale_1" src="assets/img/testimonials/testi-1.webp" alt="">
+                      <img class="reduce_size" src="assets/img/testimonials/testi-3.webp" alt="">
+                    </div>
+                    <div class="testimonial-text">
+                      <p>
+                        "Lorem ipsum dolor sit consectetur adipiscing. Mauris scelerisque euismod ante mpor. Curabitur rutrum id
+                        odio sit amet efficitur. Vestibulum tempor mattis mollis. Phasellus eget sapien in nisi sollicitudin commodo ac
+                        quis tortor."
+                      </p>
+                      <div class="tptestimonial__meta">
+                        <h4>Jerome Bell</h4>
+                        <span>Product designer</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Slide 3 -->
+                <li class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="testimonial-img">
+                      <img class="reduce_size" src="assets/img/testimonials/testi-2.webp" alt="">
+                      <img class="scale_1" src="assets/img/testimonials/testi-3.webp" alt="">
+                      <img class="reduce_size" src="assets/img/testimonials/testi-1.webp" alt="">
+                    </div>
+                    <div class="testimonial-text">
+                      <p>
+                        "Lorem ipsum dolor sit consectetur adipiscing. Mauris scelerisque euismod ante mpor. Curabitur rutrum id
+                        odio sit amet efficitur. Vestibulum tempor mattis mollis. Phasellus eget sapien in nisi sollicitudin commodo ac
+                        quis tortor."
+                      </p>
+                      <div class="tptestimonial__meta">
+                        <h4>Jerome Bell</h4>
+                        <span>Product designer</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
 
-                  <li>
+                  <!-- Slide 1 -->
+                  <li class="swiper-slide">
                     <div class="testimonial-box">
-               <div class=" testimonial-img">
-                <img class="reduce_size" src="assets/img/testimonials/testi-2.webp" alt="">
-                <img class="scale_1" src="assets/img/testimonials/testi-1.webp" alt="">
-                <img class="reduce_size" src="assets/img/testimonials/testi-3.webp" alt="">
-               </div>
-               <div class="testimonial-text">
-                <p>" Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis. Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
-                <div class="tptestimonial__meta">
-                  <h4>Jerome Bell</h4>
-                  <span>Product designer </span>
-               </div>
-               </div>
-              </div>
+                      <div class="testimonial-img">
+                        <img class="reduce_size" src="assets/img/testimonials/testi-1.webp" alt="">
+                        <img class="scale_1" src="assets/img/testimonials/testi-2.webp" alt="">
+                        <img class="reduce_size" src="assets/img/testimonials/testi-3.webp" alt="">
+                      </div>
+                      <div class="testimonial-text">
+                        <p>
+                          "Lorem ipsum dolor sit consectetur adipiscing. Mauris scelerisque euismod ante mpor. Curabitur rutrum id
+                          odio sit amet efficitur. Vestibulum tempor mattis mollis. Phasellus eget sapien in nisi sollicitudin commodo ac
+                          quis tortor."
+                        </p>
+                        <div class="tptestimonial__meta">
+                          <h4>Jerome Bell</h4>
+                          <span>Product designer</span>
+                        </div>
+                      </div>
+                    </div>
                   </li>
-              
-                  <li>
-                    <div class="testimonial-box">
-               <div class=" testimonial-img">
-                <img class="reduce_size" src="assets/img/testimonials/testi-2.webp" alt="">
-                <img class="scale_1" src="assets/img/testimonials/testi-3.webp" alt="">
-                <img class="reduce_size" src="assets/img/testimonials/testi-1.webp" alt="">
-               </div>
-               <div class="testimonial-text">
-                <p>" Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis. Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
-                <div class="tptestimonial__meta">
-                  <h4>Jerome Bell</h4>
-                  <span>Product designer </span>
-               </div>
-               </div>
-              </div>
-                  </li>
-                
-           
-                
-
-                </ul>
-             
+              </ul>
+              <!-- Add Swiper scrollbar -->
+              <div class="swiper-scrollbar"></div>
             </div>
           </div>
 
@@ -465,21 +535,21 @@
  <div class="count_block float-left w-100 pb_120">
   <div class="container">
     <div class="row align-items-center justify-content-center">
-      <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="main_count border_gradient">
-          <span class="counter">25</span> <i>+</i>
+          <span class="counter" data-count="25">0</span> <i>+</i>
           <h4>years of experience</h4>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class="col-lg-4 col-md-4 col-sm-6">
         <div class="main_count border_gradient">
-          <span class="counter">44</span> <i>+</i>
+          <span class="counter" data-count="300">0</span> <i>+</i>
           <h4>projects done on time</h4>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <div class="main_count ">
-          <span class="counter">99</span> <i>+</i>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="main_count">
+          <span class="counter" data-count="99">0</span> <i>+</i>
           <h4>talented employees</h4>
         </div>
       </div>
@@ -548,59 +618,16 @@
        
       <!-- script -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
       <script src="assets/js/custom.js"></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
       <script src="assets/js/bootstrap.min.js"></script>
       <script src="assets/js/respond.min.js"></script>
       <script src="assets/js/jquery-3.6.0.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="assets/js/script.js"></script>
       <script src="assets/js/wow.js"></script>
       <script src="assets/mail/mail.js"></script>
-   
-      <script>
-              // animations
-const $marqueeInner = $('.brand-inner');
-const marqueeWidth = $marqueeInner[0].scrollWidth;
 
-// Clone the marquee content to create a seamless loop
-$marqueeInner.append($marqueeInner.html());
 
-let currentX = 0;
-
-function animateMarquee() {
-  currentX -= 2; // Adjust this value to control the speed
-
-  // Reset when it reaches the end of the original content
-  if (Math.abs(currentX) >= marqueeWidth) {
-    currentX = 0;
-  }
-
-  $marqueeInner.css('transform', `translateX(${currentX}px)`);
-  requestAnimationFrame(animateMarquee);
-}
-
-animateMarquee();
-
-// review slider
-  $('.pr_slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    
-    responsive: [{
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: false
-      }
-    }]
-  });
-
-      </script>
   </body>
 </html>
